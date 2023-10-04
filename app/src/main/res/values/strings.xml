@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ElectricCarsApp</string>
+    <string name="title">Electric Cars</string>
+    <string name="tab_carros">Carros</string>
+    <string name="tab_favoritos">Favoritos</string>
+    <string name="price">Preço</string>
+    <string name="price_value">R$:300.000,00</string>
+    <string name="bateria">Bateria</string>
+    <string name="bateria_value">R$:300.000,00</string>
+    <string name="potencia">Potência</string>
+    <string name="potencia_value">R$:300.000,00</string>
+    <string name="recarga">Recarga</string>
+    <string name="recarga_value">50 min</string>
+    <string name="automonia">zzzz</string>
+    <string name="preco_kwh">Preço Kwh</string>
+    <string name="km_percorrido">Km Percorrido</string>
+    <string name="calcular">Calcular</string>
+    <string name="title2">Calcular Autonomia</string>
+    <string name="sem_internet">sem internet</string>
+    <string name="response_error">Algo deu errado</string>
+    <string name="saved_calc">saved_calc</string>
+</resources>
