@@ -48,7 +48,6 @@ import kotlin.math.log
 
 class CarFragment : Fragment(){
 
-    lateinit var btnCalcular: FloatingActionButton
     lateinit var listaCarros: RecyclerView
     lateinit var progress: ProgressBar
     lateinit var noInternetImage : ImageView
@@ -71,7 +70,6 @@ class CarFragment : Fragment(){
         super.onViewCreated(view, savedInstanceState)
         setupRetroFit()
         setupView(view)
-        setupListeners()
 
 
     }
@@ -128,7 +126,6 @@ class CarFragment : Fragment(){
 
 
     fun setupView(view: View){
-        btnCalcular = view.findViewById(R.id.fab_calcular)
         listaCarros = view.findViewById(R.id.rv_lista_carros)
         progress = view.findViewById(R.id.pb_loader)
         noInternetImage = view.findViewById(R.id.iv_empty_state)
@@ -147,11 +144,6 @@ class CarFragment : Fragment(){
 
     }
 
-    fun setupListeners(){
-        btnCalcular.setOnClickListener {
-            startActivity(Intent(context, CalcularAutonomiaActivity::class.java))
-        }
-    }
 
     fun callService(){
         val urlBase = "https://igorbag.github.io/cars-api/cars.json"
